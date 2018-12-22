@@ -13,9 +13,4 @@ Header.propTypes = {
     headerMessage: React.PropTypes.string
 };
 
-// You could use .isRequired, or set default props
-//App.defaultProps = {
-//    headerMessage: 'Hello!!'
-//};
-
 export default Header;

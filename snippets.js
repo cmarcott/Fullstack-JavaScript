@@ -2,6 +2,7 @@
 // Change color based on random value
 const color = Math.random() > 0.5 ? 'green' : 'red';
 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 ReactDOM.render(
     // One method of doing it
@@ -16,4 +17,19 @@ ReactDOM.render(
     <App headerMessage="Hello props!" />,
     document.getElementById('root')
 );
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+// You have to declare the prop type
+Header.propTypes = {
+    headerMessage: React.PropTypes.string
+};
+
+// You could use .isRequired, or set default props
+App.defaultProps = {
+    headerMessage: 'Hello!!'
+};
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
 */
