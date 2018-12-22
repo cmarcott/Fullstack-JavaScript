@@ -3,23 +3,36 @@ import ReactDOM from 'react-dom';
 
 // Change color based on random value
 //const color = Math.random() > 0.5 ? 'green' : 'red';
-const App = (props) => {
+
+const Header = ({ message }) => {
     return (
-        <h2 className="text-center">
-            {props.headerMessage}
+        <h2 className="Header text-center">
+            {message}
         </h2>
     );
 };
 
+
+const App = () => {
+    return (
+        <div className="App">
+            <Header message="Naming Contests" />
+            <div>
+                ...
+            </div>
+        </div>
+    );
+};
+
 // You have to declare the prop type
-App.propTypes = {
+Header.propTypes = {
     headerMessage: React.PropTypes.string
 };
 
 // You could use .isRequired, or set default props
-App.defaultProps = {
-    headerMessage: 'Hello!!'
-};
+//App.defaultProps = {
+//    headerMessage: 'Hello!!'
+//};
 
 ReactDOM.render(
     // One method of doing it
