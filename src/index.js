@@ -17,10 +17,7 @@ const App = () => {
     );
 };
 
-// You could use .isRequired, or set default props
-//App.defaultProps = {
-//    headerMessage: 'Hello!!'
-//};
+
 
 ReactDOM.render(
     // One method of doing it
@@ -31,6 +28,7 @@ ReactDOM.render(
     //    Hello Again React with JSX!! -- {Math.random()}
     //</h2>,
 
+    // Using components
     <App headerMessage="Hello props!" />,
     document.getElementById('root')
 );
