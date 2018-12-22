@@ -1,17 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Header from './components/Header';
+
 // Change color based on random value
 //const color = Math.random() > 0.5 ? 'green' : 'red';
-
-const Header = ({ message }) => {
-    return (
-        <h2 className="Header text-center">
-            {message}
-        </h2>
-    );
-};
-
 
 const App = () => {
     return (
@@ -22,11 +15,6 @@ const App = () => {
             </div>
         </div>
     );
-};
-
-// You have to declare the prop type
-Header.propTypes = {
-    headerMessage: React.PropTypes.string
 };
 
 // You could use .isRequired, or set default props
