@@ -1,1 +1,1 @@
-Node.js, Express.js, EJS template language, babel, React.js
+Node.js, Express.js, EJS template language, babel, React.js, webpack
