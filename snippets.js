@@ -33,3 +33,27 @@ App.defaultProps = {
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 */
+
+// Node Server
+
+// For reference, below method serves pages individually
+/*
+server.get('/about.html', (req, res) => {
+    fs.readFile('./public/about.html', (err, data) => {
+        res.send(data.toString());
+    });
+});
+
+
+
+
+
+
+//in server.get
+
+// Default method to send res
+res.send('Hello Express');
+
+
+*/
+
