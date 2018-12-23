@@ -7,7 +7,7 @@ import ContestPreview from './ContestPreview';
 class App extends React.Component {
     state = {
         pageHeader: 'Naming Contests',
-        contests: []
+        contests: this.props.initialContests
     };
     componentDidMount() {
         //timers, listeners, third party plugins depending on component

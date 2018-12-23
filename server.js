@@ -14,13 +14,16 @@ server.use(sassMiddleware({
 
 server.set('view engine', 'ejs');
 
-import './serverRender';
+import serverRender from './serverRender';
 
 server.get('/', (req, res) => {
-    // Render EJS template rather than send
-    res.render('index', {
-        content: 'Hello Express and EJS!'
-    });
+    serverRender()
+        .then(content => {
+            res.render('index', {
+                content
+            });
+        })
+        .catch(console.error);
 });
 
 // Simple Method, express will take care of serving content under public directory

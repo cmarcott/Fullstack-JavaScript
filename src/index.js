@@ -5,6 +5,6 @@ import App from './components/App';
 
 ReactDOM.render(
     // Using components
-    <App contests={[]} />,
+    <App initialContests={[]}/>,
     document.getElementById('root')
 );
