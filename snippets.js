@@ -55,5 +55,10 @@ server.get('/about.html', (req, res) => {
 res.send('Hello Express');
 
 
+
+// Ajax call for data
+axios.get('/api/contests')
+    .then(resp => {
+        
 */
 
