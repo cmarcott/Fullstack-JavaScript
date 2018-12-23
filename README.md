@@ -1,1 +1,1 @@
-Node.js, Express.js, EJS template language, babel, React.js, webpack, sass using node-sass-middleware
+Node.js, Express.js, EJS template language, babel, React.js, webpack, sass using node-sass-middleware, axios for ajax calls
