@@ -6,6 +6,9 @@ Node.js, Express.js, EJS template language, babel, React, webpack, sass using no
 - Dev server can be located at localhost:8080
 - This can be changed in config.js under env.PORT parameter
 
+- Run ``npm install`` to install all dependencies
+- Project developed on macOS
+
 ## Node.js Server Development
 - ``npm start`` in order to start backend server
 
