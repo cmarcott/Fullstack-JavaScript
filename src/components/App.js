@@ -35,6 +35,19 @@ class App extends React.Component {
         });
     };
 
+    fetchContestList = () => {
+        pushState(
+            { currentContestId: null},
+            `/`
+        );
+        api.fetchContestList().then(contests => {
+            this.setState({
+                currentContestId: null, 
+                contests
+            });
+        });
+    };
+
     pageHeader() {
         if (this.state.currentContestId) {
             return this.currentContest().contestName;
@@ -48,7 +61,9 @@ class App extends React.Component {
     }
     currentContent() {
         if (this.state.currentContestId) {
-            return <Contest {...this.currentContest()}/>;
+            return <Contest
+                contestListClick={this.fetchContestList}
+                {...this.currentContest()}/>;
         }
 
         return <ContestList
