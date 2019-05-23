@@ -28,3 +28,12 @@ Node.js, Express.js, EJS template language, babel, React, webpack, sass using no
 
 - Run the Mongo daemon, in one of your terminal windows run ``mongod``. This should start the Mongo server.
 - Run the Mongo shell, with the Mongo daemon running in one terminal, type ``mongo`` in another terminal window. This will run the Mongo shell which is an application to access data in MongoDB.
+
+## Populate MongoDB With Test Data
+
+- Ensure the node-modules relative path is added to classpath in order to run ``babel-node``
+
+- Run the loadTestData.js script to create the contests
+    - ``babel-node loadTestData.js``
+- Run the updateTestData.js script to create the initial test names
+    - ``babel-node updateTestData.js``
