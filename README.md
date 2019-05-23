@@ -1,19 +1,23 @@
-Node.js, Express.js, EJS template language, babel, React, webpack, sass using node-sass-middleware, axios for ajax calls
+# Purpose
+
+A project I have been working on in my spare time in order to practice and learn more about Node.js and React. This project also allowed me to sharpen my database skills using MongoDB as persistent storage.
+
+Technologies used in this project: Node.js, Express.js, EJS template language, babel, React, webpack, sass using node-sass-middleware, Axios for ajax calls
 
 
-# Development
+# Running the Project
 
-- Dev server can be located at localhost:8080
+- Dev server will be located at localhost:8080
 - This can be changed in config.js under env.PORT parameter
-
+- Project developed and tested on macOS Mojave
 - Run ``npm install`` to install all dependencies
-- Project developed on macOS
+- Follow instructions in below header sections to set up project
 
-## Node.js Server Development
-- ``npm start`` in order to start backend server
+## Node.js Server
+- ``npm start`` in order to start or develop backend server and api
 
-## React Frontend Development
-- ``npm run dev`` in separate terminal in order to develop frontend react changes
+## React Frontend
+- ``npm run dev`` in separate terminal in order to run or develop frontend react changes
 
 ## MongoDB Setup
 - Ensure you have installed MongoDB from website or through homebrew if on Mac
@@ -37,3 +41,7 @@ Node.js, Express.js, EJS template language, babel, React, webpack, sass using no
     - ``babel-node loadTestData.js``
 - Run the updateTestData.js script to create the initial test names
     - ``babel-node updateTestData.js``
+
+## Acknowledgements
+
+- Based off Lynda.com course ``Learning Fullstack Javascript``.
